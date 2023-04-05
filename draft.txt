@@ -1,0 +1,99 @@
+                  
+            <div class="col-sm-4">
+                    <div class="form-group">
+                    <label for="">نام اسناد</label>
+                        <input tabindex="2"  style="height:40px!important;"  type="text" name="doc_name" value="{{old('doc_name')}}" class="form-control {{$errors->has('doc_name') ? 'is-invalid':''}}" >
+                        <i class="form-group__bar"></i>
+                        @if($errors->has('doc_name'))
+                        <strong style="color:#dc3545">{{$errors->first('doc_name')}}</strong>
+
+                        @endif
+                    </div>
+                </div>
+				
+
+                <div class="col-sm-4">
+                <div class="form-group">
+                <label for="">تا تاریخ</label>
+                    <input type="text" tabindex="3" id="date1" style="height:40px!important;" class="form-control {{$errors->has('end_date') ? 'is-invalid':''}}" value="{{old('end_date')}}" name="end_date">
+                    <i class="form-group__bar"></i>
+                    @if($errors->has('end_date'))
+                    <strong style="color:#dc3545">{{$errors->first('end_date')}}</strong>
+                    @endif
+                </div>
+            </div>
+
+                <div class="col-sm-4">
+                <div class="form-group">
+                <label for="">از تاریخ</label>
+                    <input type="text" tabindex="3" id="date2" style="height:40px!important;" class="form-control {{$errors->has('start_date') ? 'is-invalid':''}}" value="{{old('doc_date')}}" name="start_date">
+                    <i class="form-group__bar"></i>
+                    @if($errors->has('start_date'))
+                    <strong style="color:#dc3545">{{$errors->first('start_date')}}</strong>
+                    @endif
+                </div>
+            </div>
+
+
+
+            <!-- <div class="col-sm-3">
+                    <div class="form-group">
+                    <label for="">نمبر پشنهاد</label>
+                        <input tabindex="1"  style="height:40px!important;"  type="text" name="sugg_no" value="{{old('sugg_no')}}" class="form-control {{$errors->has('sugg_no') ? 'is-invalid':''}}" >
+                        <i class="form-group__bar"></i>
+                        @if($errors->has('sugg_no'))
+                        <strong style="color:#dc3545">{{$errors->first('sugg_no')}}</strong>
+
+                        @endif
+                    </div>
+                </div> -->
+
+                <!-- <div class="col-sm-3">
+                    <div class="form-group">
+                    <label for="">نوع پشنهاد</label>
+                        <input tabindex="1"  style="height:40px!important;"  type="text" name="doc_type" value="{{old('doc_type')}}" class="form-control {{$errors->has('doc_type') ? 'is-invalid':''}}" >
+                        <i class="form-group__bar"></i>
+                        @if($errors->has('doc_type'))
+                        <strong style="color:#dc3545">{{$errors->first('doc_type')}}</strong>
+
+                        @endif
+                    </div>
+                </div> -->
+
+                <!-- <div class="col-sm-3">
+                    <div class="form-group">
+                    <label for="">نام جزوتام</label>
+                        <input tabindex="1"  style="height:40px!important;"  type="text" name="chuzutam" value="{{old('chuzutam')}}" class="form-control {{$errors->has('chuzutam') ? 'is-invalid':''}}" >
+                        <i class="form-group__bar"></i>
+                        @if($errors->has('chuzutam'))
+                        <strong style="color:#dc3545">{{$errors->first('chuzutam')}}</strong>
+
+                        @endif
+                    </div>
+                </div> -->
+
+                
+            <!-- <div class="col-sm-3">
+                    <div class="form-group">
+                    <label for="">نمبر مسلسل وارده</label>
+                        <input tabindex="2"  style="height:40px!important;"  type="text" name="doc_name" value="{{old('doc_name')}}" class="form-control {{$errors->has('doc_name') ? 'is-invalid':''}}" >
+                        <i class="form-group__bar"></i>
+                        @if($errors->has('doc_name'))
+                        <strong style="color:#dc3545">{{$errors->first('doc_name')}}</strong>
+
+                        @endif
+                    </div>
+                </div> -->
+				
+<!-- 
+            <div class="col-sm-3">
+                    <div class="form-group">
+                    <label for="">نمبر مسلسل صادره</label>
+                        <input tabindex="1"  style="height:40px!important;"  type="text" name="doc_type" value="{{old('doc_type')}}" class="form-control {{$errors->has('doc_type') ? 'is-invalid':''}}" >
+                        <i class="form-group__bar"></i>
+                        @if($errors->has('doc_type'))
+                        <strong style="color:#dc3545">{{$errors->first('doc_type')}}</strong>
+
+                        @endif
+                    </div>
+                </div> -->
